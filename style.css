@@ -1,0 +1,757 @@
+@import url('https://fonts.googleapis.com/css2?family=Federo&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Federo", sans-serif;
+    text-decoration: none;
+    /*Para quitar el subrayado de los hipervinculos*/
+    list-style: none;
+    /*Para quitar el color del subrayado*/
+    box-sizing: border-box;
+}
+
+
+
+.principal {
+    background: #f4ebdf;
+}
+
+nav {
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    top: 0;
+    z-index: 1000;
+    margin: auto;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 1.2em;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #e75480;
+}
+
+/* SECCIONES */
+
+
+section {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+header {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    padding: 40px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    color: #e26150;
+    font-size: 1.5rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: #7bcdc1;
+    border-radius: 5px;
+    padding: 0 10px;
+    font-family: "Oswald", sans-serif;
+    font-weight: 600;
+}
+
+header .logo:hover {
+    color: #7bcdc1;
+    background: #e26150;
+    transition: 0.5s;
+}
+
+header .navbar {
+    position: relative;
+    display: flex;
+}
+
+header .navbar li {
+    list-style: none;
+    margin-left: 30px;
+}
+
+header .navbar li a {
+    text-decoration: none;
+    color: #7bcdc1;
+    font-weight: 600;
+    padding: 10px;
+    transition: 0.3s;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+}
+
+header .navbar li a:hover {
+    border-bottom: 5px solid #f9af28;
+    padding: 2px;
+}
+
+/*Contenido WEB*/
+
+.contenido {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 30px;
+}
+
+.contenido .tituloBox {
+    position: relative;
+    max-width: 600px;
+    text-align: center;
+}
+
+.contenido .tituloBox h2 {
+    font-size: 3em;
+    text-transform: uppercase;
+    color: #7bcdc1;
+}
+
+.contenido .tituloBox h2 span {
+    background: #f9af28;
+    color: #f4ebdf;
+    padding: 0 10px;
+    font-family: "Federo", sans-serif;
+    font-weight: 600;
+    border-radius: 20px;
+}
+
+.contenido .tituloBox p {
+    font-size: 1.8em;
+    line-height: 1.5;
+    color: #f588a7;
+    font-family: "Federo", sans-serif;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.contenido .tituloBox a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #f4ebdf;
+    background: #e26150;
+    padding: 10px 20px;
+    margin: left 30px;
+    border-radius: 20px;
+    letter-spacing: 2px;
+    transition: 0.5s;
+}
+
+.contenido .tituloBox a:hover {
+    color: #e26150;
+    background: #fff;
+    transition: 0.5s;
+}
+
+.contenido .imgBox {
+    width: 600px;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 150px;
+    margin-top: -50px;
+    z-index: -5;
+}
+
+.contenido .imgBox img {
+    height: 80vh;
+}
+
+.contenido .imgBox img:hover {
+    height: 80vh;
+}
+
+.copyright {
+    position: absolute;
+    bottom: 0px;
+    left: 800px;
+    margin-bottom: 20px;
+    padding: 10px 10px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.copyright p {
+    color: #fff;
+    text-align: center;
+    margin-left: 100px;
+}
+
+.redesSociales {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    display: flexbox;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px 30px;
+    list-style: none;
+}
+
+.redesSociales li {
+    padding: 10px;
+}
+
+.redesSociales li a {
+    color: #fff;
+    font-size: 2.5em;
+    transition: 0.3s;
+}
+
+.redesSociales li:hover a {
+    color: #228b22;
+}
+
+.circulo {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: #f588a7;
+    clip-path: circle(650px at right 800px);
+    width: 100%;
+    height: 100%;
+    z-index: -1000;
+}
+
+.circulo2 {
+    position: absolute;
+    top: -100px;
+    left: 0px;
+    background: #e26150;
+    clip-path: circle(650px at right 10px);
+    width: 100%;
+    height: 100%;
+    z-index: -1000;
+}
+
+/*FORMULARIO*/
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.formularioBackground {
+    background-image: url(img/fondoFormulario.png);
+}
+
+.background-text {
+    position: absolute;
+    top: -50px;
+    left: 55px;
+    right: 50%;
+    font-size: 250px;
+    color: #f9af28;
+    text-shadow: 0 0 20px rgba(0, 0, 0, 0.114);
+    opacity: 0.8;
+    z-index: 0;
+    font-weight: bold;
+    margin: auto;
+    text-transform: uppercase;
+}
+
+.form-container {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 150px;
+    margin-bottom: auto;
+    height: auto;
+    position: relative;
+    background-color: #e26150d9;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    width: 800px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.form-container h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.form-container p {
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: white;
+    border-radius: 10px;
+    text-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    background: transparent;
+    font-size: 14px;
+    outline: none;
+}
+
+.fondo-texto {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 60px;
+    color: #f4ebdf;
+    z-index: 0;
+    opacity: 0.2;
+    pointer-events: none;
+    color: black;
+}
+
+.formulario {
+    position: relative;
+    margin-top: auto;
+    z-index: 1;
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+    width: 100%;
+    cursor: pointer;
+}
+
+.imgBoxForm {
+    width: 50px;
+    display: flex;
+    justify-content: flex;
+    padding-right: 100px;
+    margin-top: -100px;
+    z-index: 1;
+}
+
+.imgBoxForm img {
+    height: 20vh;
+}
+
+.imgBoxForm img:hover {
+    height: 20vh;
+}
+
+.boton {
+    color: #f9af28;
+    font-size: 1.5rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: #74c2b2;
+    border-radius: 5px;
+    padding: 0 10px;
+    font-family: "Oswald", sans-serif;
+    font-weight: 600;
+    width: 20%;
+    margin: auto;
+    cursor: pointer;
+}
+
+.boton:hover {
+    color: #e26150;
+    background: #f9af28;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+#copyright2 {
+    position: absolute;
+    margin-bottom: 20px;
+    padding: 10px 10px 30px;
+    padding-bottom: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*SOBRE MI*/
+
+.fondo2 {
+    background-image: url(img/fondo.png);
+    background-repeat: no-repeat;
+}
+
+.presentacion {
+    position: absolute;
+    margin-right: 150px;
+    margin-left: 150px;
+    margin-top: 500px;
+    margin-bottom: 500px;
+    padding: 0px;
+    padding-right: 300px;
+    font-size: 1.8em;
+
+    background: 100px 100px;
+    top: -400px;
+    border-radius: 20px;
+}
+
+.form-container nav {
+    margin-left: -20px;
+    margin-right: auto;
+    margin-top: -20px;
+    margin-bottom: 10px;
+    height: auto;
+    background-color: #e26150;
+    width: 800px;
+    z-index: 1;
+    text-align: center;
+    border-radius: 20px;
+    background-color: #f4ebdf;
+}
+
+#titulo {
+    margin-top: 200px;
+    color: black;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+footer {
+    margin: -600px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#copyright3 {
+    position: absolute;
+    margin-bottom: 20px;
+    padding: 10px 10px 30px;
+    padding-bottom: 0;
+    padding-top: 670px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*CV*/
+
+.bodycv {
+    background-image: url(img/fondo.png);
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.resume {
+    max-width: 1000px;
+    margin: 100px auto;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+.headerCv {
+    display: flex;
+    background: #f588a7;
+    padding: 30px;
+    align-items: center;
+}
+
+.fotoPerfil {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-right: 30px;
+    object-fit: cover;
+}
+
+.intro h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+.intro p {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.intro span {
+    color: #f4ebdf;
+}
+
+.title {
+    font-weight: bold;
+    background: #e26150;
+    color: white;
+    padding: 5px 10px;
+    display: inline-block;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+.content {
+    display: flex;
+    padding: 30px;
+    margin-top: -100px;
+}
+
+.column {
+    flex: 1;
+    padding: 20px;
+}
+
+.column h2 {
+    border-bottom: 2px solid black;
+    padding-bottom: 5px;
+    margin-top: 30px;
+}
+
+.experience {
+    margin: 15px 0;
+}
+
+.skills,
+.hobbies {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.skills li,
+.hobbies li {
+    background: #f9af28;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.9em;
+}
+
+/*Proyectos*/
+.bodyProyectos {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url(img/fondo.png);
+    background-attachment: fixed;
+}
+
+.card {
+    position: relative;
+    width: 300px;
+    height: 350px;
+    margin: 20px;
+}
+
+.card .face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.card .front {
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0px 5px 10px #0000;
+}
+
+.card .front img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /*Indica cómo el contenido de un elemento deberá ser redimensionado para ajustarse a su contenedor*/
+}
+
+.card .card1 .front h3 {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    background: #74c2b2;
+    text-align: center;
+}
+
+.card .card1 .back {
+    transform: perspective(600px) rotateY(180deg);
+    background: #74c2b2;
+    padding: 15px;
+    color: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0px 5px 10px #0000;
+}
+
+.card .card1 .back .link {
+    border-top: 1px solid #f3f3f3;
+    height: 50px;
+    line-height: 50px;
+}
+
+.card .card1 .back .link a {
+    color: #f3f3f3;
+}
+
+.card .card1 .back h3 {
+    font-size: 30px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+}
+
+.card .card1 .back p {
+    letter-spacing: 1px;
+}
+
+.card:hover .front {
+    transform: perspective(600px) rotateY(180deg);
+}
+
+.card:hover .back {
+    transform: perspective(600px) rotateY(360deg);
+}
+
+.card .card2 .front h3 {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    background: #f588a7;
+    text-align: center;
+}
+
+.card .card2 .back {
+    transform: perspective(600px) rotateY(180deg);
+    background: #f588a7;
+    padding: 15px;
+    color: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0px 5px 10px #0000;
+}
+
+.card .card2 .back .link {
+    border-top: 1px solid #f3f3f3;
+    height: 50px;
+    line-height: 50px;
+}
+
+.card .card2 .back .link a {
+    color: #f3f3f3;
+}
+
+.card .card2 .back h3 {
+    font-size: 30px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+}
+
+.card .card2 .back p {
+    letter-spacing: 1px;
+}
+
+.card:hover .front {
+    transform: perspective(600px) rotateY(180deg);
+}
+
+.card:hover .back {
+    transform: perspective(600px) rotateY(360deg);
+}
+
+.card .card3 .front h3 {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    background: #f9af28;
+    text-align: center;
+}
+
+.card .card3 .back {
+    transform: perspective(600px) rotateY(180deg);
+    background: #f9af28;
+    padding: 15px;
+    color: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0px 5px 10px #0000;
+}
+
+.card .card3 .back .link {
+    border-top: 1px solid #f3f3f3;
+    height: 50px;
+    line-height: 50px;
+}
+
+.card .card3 .back .link a {
+    color: #f3f3f3;
+}
+
+.card .card3 .back h3 {
+    font-size: 30px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+}
+
+.card .card2 .back p {
+    letter-spacing: 1px;
+}
+
+.card:hover .front {
+    transform: perspective(600px) rotateY(180deg);
+}
+
+.card:hover .back {
+    transform: perspective(600px) rotateY(360deg);
+}

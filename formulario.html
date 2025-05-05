@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulario contacto</title>
+</head>
+
+<body class="fondo2">
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">INICIO</a></li>
+                <li><a href="cv.html">CV</a></li>
+                <li><a href="proyectos.html">PROYECTOS</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="background-text">Contacto</div>
+    <div class="form-container">
+        <div class="fondo-texto"></div>
+        <p>Si quieres saber más sobre mi, llena el formulario de contacto</p>
+        <form class="formulario" name="formulario" action="mailto:raul.rodriguez@proeducaglobal.com" method="post">
+            <label for="nombre">Nombre:</label><br>
+            <input type="text" id="nombre" name="nombre" required><br><br>
+
+            <label for="email">Correo electrónico:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="asunto">Asunto:</label><br>
+            <input type="text" id="asunto" name="asunto"><br><br>
+
+            <label for="mensaje">Mensaje:</label><br>
+            <textarea id="mensaje" name="mensaje" rows="5" cols="30" required></textarea><br><br>
+
+            <div class="boton">
+                <input type="submit" value="Enviar">
+            </div>
+            <div class="imgBoxForm">
+                <img src="img/contacto.png" alt="">
+            </div>
+        </form>
+    </div>
+    <footer>
+        <section>
+            <div id="copyright3">
+                <p>&copy;Web Personal creada para la materia de Lenguaje de Marcas <br> del CFGS DAW</p>
+            </div>
+        </section>
+    </footer>
+</body>
+
+</html>
