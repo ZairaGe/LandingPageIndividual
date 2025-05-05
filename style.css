@@ -755,3 +755,10 @@ footer {
 .card:hover .back {
     transform: perspective(600px) rotateY(360deg);
 }
+
+@media (min-width: 768px) {
+    body {
+        font-size: 18px;
+        display: flex;
+    }
+}
