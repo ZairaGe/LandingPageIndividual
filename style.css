@@ -757,101 +757,42 @@ footer {
 /***********************************************************************/
 @media screen and (max-width: 768px) {
     header {
-        flex-direction: column;
-        padding: 20px;
-        text-align: center;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
     }
-
-    header .navbar {
-        flex-direction: column;
-        align-items: center;
+  
+    nav {
+      flex-direction: column;
+      gap: 10px;
     }
-
-    header .navbar li {
-        margin: 10px 0;
-    }
-
-    .contenido {
-        flex-direction: column;
-        padding: 10px;
-        text-align: center;
-    }
-
-    .contenido .imgBox {
-        justify-content: center;
-        padding-right: 0;
-        margin-top: 20px;
-        width: 100%;
-    }
-
-    .contenido .imgBox img {
-        height: 50vh;
-        width: auto;
-    }
-
-    .contenido .tituloBox {
-        max-width: 90%;
-    }
-
-    .form-container {
-        width: 90%;
-        padding: 20px;
-        margin-top: 50px;
-    }
-
+  
     .presentacion {
-        margin: 20px;
-        padding: 10px;
-        font-size: 1.2em;
-        top: 0;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
     }
-
-    .resume {
-        margin: 20px auto;
-        width: 95%;
+  
+    .contenedor-texto {
+      width: 100%;
     }
-
-    .headerCv {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
+  
+    .contenedor-imagen img {
+      width: 70%;
+      height: auto;
     }
-
-    .fotoPerfil {
-        margin-bottom: 20px;
+  
+    h1, h2 {
+      font-size: 24px;
     }
-
-    .content {
-        flex-direction: column;
-        margin-top: 0;
+  
+    .boton {
+      width: 80%;
+      font-size: 16px;
     }
-
-    .column {
-        padding: 10px;
+  
+    body {
+      overflow-x: hidden;
     }
-
-    .card {
-        width: 90%;
-        height: auto;
-    }
-
-    .redesSociales {
-        position: relative;
-        justify-content: center;
-        padding: 10px;
-    }
-
-    .copyright, #copyright2, #copyright3 {
-        position: relative;
-        left: 0;
-        padding: 10px;
-        text-align: center;
-        justify-content: center;
-    }
-
-    .background-text {
-        font-size: 100px;
-        left: 10px;
-        top: 10px;
-    }
-}
+  }
+  
