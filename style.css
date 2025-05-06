@@ -9,7 +9,6 @@
     /*Para quitar el subrayado de los hipervinculos*/
     list-style: none;
     /*Para quitar el color del subrayado*/
-    box-sizing: border-box;
 }
 
 
@@ -162,7 +161,7 @@ header .navbar li a:hover {
     color: #f4ebdf;
     background: #e26150;
     padding: 10px 20px;
-    margin: left 30px;
+    margin-left: 30px;
     border-radius: 20px;
     letter-spacing: 2px;
     transition: 0.5s;
@@ -212,7 +211,7 @@ header .navbar li a:hover {
     position: absolute;
     right: 0px;
     bottom: 0px;
-    display: flexbox;
+    display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 10px 30px;
@@ -756,7 +755,7 @@ footer {
     transform: perspective(600px) rotateY(360deg);
 }
 /***********************************************************************/
-@media screen and (max-width: 600px) {
+@media (max-width: 768px) {
     nav ul {
         flex-direction: column;
         gap: 10px;
@@ -765,31 +764,23 @@ footer {
     header {
         flex-direction: column;
         padding: 20px;
-        text-align: center;
     }
 
     .contenido {
         flex-direction: column;
+        padding: 20px;
         align-items: center;
-        padding: 10px;
-    }
-
-    .contenido .tituloBox h2 {
-        font-size: 1.6rem;
-    }
-
-    .contenido .tituloBox p {
-        font-size: 1.2rem;
+        text-align: center;
     }
 
     .contenido .imgBox {
-        padding-right: 0;
+        padding: 0;
+        margin: 20px 0;
         justify-content: center;
-        margin-top: 20px;
     }
 
     .contenido .imgBox img {
-        height: 50vh;
+        height: 40vh;
     }
 
     .form-container {
@@ -797,71 +788,34 @@ footer {
         padding: 20px;
     }
 
-    .redesSociales li a {
-        font-size: 1.8em;
+    .presentacion {
+        margin: 50px 20px;
+        padding-right: 20px;
+        font-size: 1.2em;
     }
 
-    .presentacion h2,
-    .presentacion p {
-        font-size: 1.2rem;
-    }
-
-    .boton, .boton2 {
-        width: 100%;
-    }
-}
-@media screen and (min-width: 601px) and (max-width: 1024px) {
-    nav ul {
-        gap: 20px;
-    }
-
-    .contenido {
+    .headerCv {
         flex-direction: column;
-        padding: 20px;
+        align-items: center;
+        text-align: center;
     }
 
-    .contenido .imgBox {
-        padding-right: 0;
-        justify-content: center;
-        margin-top: 20px;
+    .fotoPerfil {
+        margin: 0 0 20px 0;
     }
 
-    .contenido .imgBox img {
-        height: 60vh;
+    .content {
+        flex-direction: column;
+        margin-top: 0;
     }
 
-    .contenido .tituloBox h2 {
-        font-size: 2.2rem;
+    .column {
+        padding: 10px;
     }
 
-    .contenido .tituloBox p {
-        font-size: 1.5rem;
-    }
-
-    .form-container {
-        width: 80%;
-        padding: 30px;
-    }
-
-    .redesSociales li a {
-        font-size: 2em;
-    }
-
-    .presentacion h2,
-    .presentacion p {
-        font-size: 1.5rem;
-    }
-
-    .boton, .boton2 {
-        width: 50%;
-    }
-}
-@media screen and (min-width: 1025px) {
-    .form-container {
-        width: 800px;
-    }
-
-    .contenido .imgBox img {
-        height: 80vh;
+    .background-text {
+        font-size: 80px;
+        top: 0;
+        left: 10px;
     }
 }
