@@ -983,23 +983,5 @@ footer {
         padding: 8px 15px;
         border-radius: 15px;
     }
-
-    .bodyProyectos {
-        flex-direction: column;
-        min-height: auto;
-        padding: 20px 0;
-    }
-
-    .card {
-        width: 90%;
-        height: auto;
-        margin: 20px 0;
-    }
-
-    .card .front img {
-        object-fit: cover;
-        height: 200px;
-    }
-
-    
+   
 }
