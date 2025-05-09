@@ -1001,26 +1001,5 @@ footer {
         height: 200px;
     }
 
-    .card .card1 .back h3,
-    .card .card2 .back h3,
-    .card .card3 .back h3 {
-        font-size: 24px;
-        margin-top: 10px;
-        letter-spacing: 1px;
-    }
-
-    .card .card1 .back p,
-    .card .card2 .back p,
-    .card .card3 .back p {
-        font-size: 14px;
-        letter-spacing: 0.5px;
-    }
-
-    .card .card1 .back .link,
-    .card .card2 .back .link,
-    .card .card3 .back .link {
-        height: 40px;
-        line-height: 40px;
-        font-size: 14px;
-    }
+    
 }
